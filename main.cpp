@@ -15,7 +15,7 @@ int add(int a, int b) {
 };
 
 void
-find_largest_sum(unsigned int T, const std::vector<unsigned int> &I, std::vector<unsigned int> &M, unsigned int &S) {
+find_largest_sum(unsigned int T, const std::vector<unsigned int> &I, std::vector<unsigned int> &M, unsigned int &S) { //Sorted List is expected
     if (I.size() == 1) { // Input vector size 1 then no need for calculations.
         if (I[0] <= T) { // We have a solution set outputs
             M.push_back(I[0]);
